@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <p>Hello, my name is
+            <strong>Cameron Wilson</strong>
+            This is my current portfolio!
+        </p>
+    </header>
+<div class="accordion mt-0" id="mainAccordion">
+    <div class="accordion-item blackAndWhite">
+        <h3 class="accordion-header " id="aboutHeader">
+            <button class="accordion-button headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbout" aria-expanded="true" aria-controls="collapseOne">
+                1.0 About Cameron
+            </button>
+        </h3>
+        <div id="collapseAbout" class="accordion-collapse collapse show" aria-labelledby="aboutHeader" data-bs-parent="#mainAccordion">
+            <p class="accordion-body border mb-0">
+                I am currently in my third year of Software Systems Engineering at the University of Regina, learning about as many things as I can!<br/>
+                Outside of school and work, I enjoy working on my vehicle and playing music.
+            </p>
+        </div>
+    </div>  
+    <div class="accordion-item blackAndWhite">
+        <h3 class="accordion-header" id="experienceHeader">
+            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExperience" aria-expanded="false" aria-controls="collapseTwo">
+                2.0 Experience
+            </button>
+        </h3>
+        <div id="collapseExperience" class="accordion-collapse collapse" aria-labelledby="experienceHeader" data-bs-parent="#mainAccordion">    
+            <div class="accordion-body border mb-0">
+                <p>My current work Experience includes:</p>
+                <ul>
+                    <li>Deli Clerk: Jackson's Independent November 2016 - Present</li>
+                    <li>CS115 Lab instructor: University of Regina (Co-op) Jan 2022 - Apr 2022</li>
+                    <li>Technical Field Specialist Intern: Magnum Cementing (Co-op) Jan 2021 - Apr 2021</li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+    <div class="accordion-item blackAndWhite">
+        <h3 class="accordion-header" id="projectsHeader">
+            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProjects" aria-expanded="false" aria-controls="collapseThree">
+                3.0 Projects
+            </button>
+        </h3>
+        <div id="collapseProjects" class="accordion-collapse collapse" aria-labelledby="projectsHeader" data-bs-parent="#mainAccordion"> 
+            <div class="accordion-body border mb-0">
+                <h4>3.1 School</h4>
+                <div class="accordion mt-0" id="schoolAccordion">
+                    <div class="accordion-item blackAndWhite">
+                        <div class="accordion-header " id="firstHeader">
+                            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFirst" aria-expanded="false" aria-controls="collapseOne">
+                                Whack-a-mole
+                            </button>
+                        </div>
+                        <div id="collapseFirst" class="accordion-collapse collapse" aria-labelledby="firstHeader" data-bs-parent="#schoolAccordion">
+                            <p class="accordion-body border mb-0">
+                                This was an ENSE 352, fundamentals of computer architecture class, project to build whack-a-mole on a Nucleo64 board in Arm assembly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item blackAndWhite">
+                        <div class="accordion-header " id="secondHeader">
+                            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecond" aria-expanded="false" aria-controls="collapseTwo">
+                                Physical Activity Tracker (P.A.T)
+                            </button>
+                        </div>
+                        <div id="collapseSecond" class="accordion-collapse collapse" aria-labelledby="secondHeader" data-bs-parent="#schoolAccordion">
+                            <p class="accordion-body border mb-0">
+                                This was an ENSE 374 class project done in a team. The team I was on had the name "Pulaski" and we chose to make a webpage to track physical activities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item blackAndWhite">
+                        <div class="accordion-header " id="thirdHeader">
+                            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThird" aria-expanded="false" aria-controls="collapseThree">
+                                To do list
+                            </button>
+                        </div>
+                        <div id="collapseThird" class="accordion-collapse collapse" aria-labelledby="thirdHeader" data-bs-parent="#schoolAccordion">
+                            <p class="accordion-body border mb-0">
+                                This was the ENSE 374 lab project.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item blackAndWhite">
+                        <div class="accordion-header " id="fourthHeader">
+                            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                                4 bit sequential counter
+                            </button>
+                        </div>
+                        <div id="collapseFourth" class="accordion-collapse collapse" aria-labelledby="firstHeader" data-bs-parent="#schoolAccordion">
+                            <p class="accordion-body border mb-0">
+                                Breadboard project to make a 4 bit sequential counter and display it using 4 LEDs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item blackAndWhite">
+                        <div class="accordion-header " id="fifthHeader">
+                            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                                Recipe Sharing Website
+                            </button>
+                        </div>
+                        <div id="collapseFifth" class="accordion-collapse collapse" aria-labelledby="firstHeader" data-bs-parent="#schoolAccordion">
+                            <p class="accordion-body border mb-0">
+                                CS215 class project
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item blackAndWhite">
+                        <div class="accordion-header " id="sixthHeader">
+                            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixth" aria-expanded="false" aria-controls="collapseSixth">
+                                Accreditation Website
+                            </button>
+                        </div>
+                        <div id="collapseSixth" class="accordion-collapse collapse" aria-labelledby="sixthHeader" data-bs-parent="#schoolAccordion">
+                            <p class="accordion-body border mb-0">
+                               ENSE 271 class project to design and build an Accreditation management website, worked in team Squirmy-Gummy-Worms
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item blackAndWhite">
+                        <div class="accordion-header " id="seventhHeader">
+                            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventh" aria-expanded="false" aria-controls="collapseSeventh">
+                                Rube Goldberg Machine
+                            </button>
+                        </div>
+                        <div id="collapseSeventh" class="accordion-collapse collapse" aria-labelledby="seventhHeader" data-bs-parent="#schoolAccordion">
+                            <p class="accordion-body border mb-0">
+                               ENGG 123 design project done as part of a team.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h4>3.2 Personal</h4>
+                <div class="accordion mt-0" id="personalAccordion">
+                    <div class="accordion-item blackAndWhite">
+                        <div class="accordion-header " id="firstPerHeader">
+                            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePerFirst" aria-expanded="false" aria-controls="collapseOne">
+                                Dead by Daylight Random Build Generator (WIP)
+                            </button>
+                        </div>
+                        <div id="collapsePerFirst" class="accordion-collapse collapse" aria-labelledby="firstPerHeader" data-bs-parent="#schoolAccordion">
+                            <p class="accordion-body border mb-0">
+                                This is my current personal project
+                            </p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item blackAndWhite">
+        <h3 class="accordion-header" id="contactHeader">
+            <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContact" aria-expanded="false" aria-controls="collapseFour">
+                4.0 Contact
+            </button>
+        </h3>
+        <div id="collapseContact" class="accordion-collapse collapse" aria-labelledby="contactHeader" data-bs-parent="#mainAccordion"> 
+            <div class="accordion-body border mb-0">
+                <p>Want to get ahold of me? feel free to contact me at my email: wilsoncameron42@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
