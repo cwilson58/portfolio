@@ -59,13 +59,31 @@
                     <div class="accordion-item blackAndWhite">
                         <div class="accordion-header " id="firstHeader">
                             <button class="accordion-button collapsed headerColour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFirst" aria-expanded="false" aria-controls="collapseOne">
-                                Whack-a-mole
+                                Whack-a-mole, Winter 2021 
                             </button>
                         </div>
                         <div id="collapseFirst" class="accordion-collapse collapse" aria-labelledby="firstHeader" data-bs-parent="#schoolAccordion">
-                            <p class="accordion-body border mb-0">
-                                This was an ENSE 352, fundamentals of computer architecture class, project to build whack-a-mole on a Nucleo64 board in Arm assembly.
-                            </p>
+                            <div class="accordion-body border mb-0 pb-5 d-flex">
+                                <div style="max-width: 25%;">
+                                    <img src="images/Whack-a-mole.jpg" alt="Image of Final Circuit" class="img-fluid">
+                                </div>
+                                <p style="vertical-align: top;">
+                                    This was an ENSE 352, fundamentals of computer architecture, class project to build whack-a-mole on a Nucleo64 board in Arm assembly.
+                                    Due to the fact that this is a common class project, I wont make my versions source code public. <br>
+                                    
+                                    The basic idea of the project was to take a circuit that was designed by our lab instructor and write the code that will handle output to 4 LED's
+                                    as well as the input of 4 push buttons. <br>
+                                    
+                                    My version added a fifth LED (Yellow), I had to find an I/O pin and use correct circuitry to add this. This Fifth LED was to improve user interaction with
+                                    the game. It was used as a "score indicator", it would be solid for scores from 1 - 14, and flash if the score was zero or greater than 15.
+                                    The score was displayed in binary on the four LED's used to play the game, so having indication using a 5th LED that the score was being displayed
+                                    allowed for the user to know the game is working as intended. <br> 
+                                    
+                                    The other additional feature I added was a difficulty selection, each of the 4 buttons gave you a range of easy to impossible reaction times. All of these times are
+                                    able to be modified in the source codes, in the end the project worked as intended. <br>
+                                    
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="accordion-item blackAndWhite">
